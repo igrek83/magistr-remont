@@ -4,46 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.e785c81ce5619e4ef7a4.css">
-  <title>Magistr-remont-main</title>
+  <link rel="stylesheet" href="main.921304a86579be43cfd0.css">
+  <title>Магистер Ремонт Квартир в Москве</title>
 </head>
 <body>
   <div class="page">
-
-    <!--
-    <div class="span-block">
-      <div class="span-line">
-        <div class="span-line-top"></div>
-      </div> -->
-
-      <div id="preloaderWrapper">
-        <div id="preloader">
-            
-            <div id="preloaderСounter">0%</div>
-        </div>
-      </div>  
-    </div>
+    <div id="preloaderWrapper">
+      <div id="preloader">
+        <div id="preloaderСounter">0%</div>
+      </div>
+    </div>  
     <section class="popup">
       <form class="popup__form-container">
         <div class="popup__close-form"></div>
         <h3 class="popup__form-title"></h3>
-        <input type="text" placeholder="Как Вас зовут?" class="popup__form-input">
-        <input type="tel" placeholder="Ваш телефон" class="popup__form-input">
-        <button type="submit" class="popup__form-button">Ок</button>
+        <input type="text" id="text" placeholder="Как Вас зовут?" class="popup__form-input">
+        <input type="tel" id="tel" placeholder="Ваш телефон" class="popup__form-input">
+        <button type="button" class="popup__form-button">ОK</button>
       </form>
-      <div class="popup__container">
-        <div class="popup__close"></div>
+      <div id="firstSlider" class="popup__container">
         <div class="popup__box">
           <div class="popup__mini-box">
-            <button type="button" id="popupLeft" class="popup__button">
-              <span class="popup__left-figure"></span>
-              <span class="popup__span-button">Пред.</span>
-            </button>
-            <h3 class="popup__title">Ремонт 1-к квартиры</h3>
-            <button type="button" id="popupRight" class="popup__button">
-              <span class="popup__span-button">След.</span>
-              <span class="popup__right-figure"></span>
-            </button>
+            <h3 class="popup__title">Квартира-студия ЖК “Парк Рублево”.</h3>
+            <div class="popup__button-box">
+              <button type="button" id="popupLeft" class="popup__button">
+                <span class="popup__left-figure"></span>
+                <span class="popup__span-button">Пред.</span>
+              </button>
+              <button type="button" id="popupRight" class="popup__button">
+                <span class="popup__span-button">След.</span>
+                <span class="popup__right-figure"></span>
+              </button>
+            </div>
+            <div class="popup__close"></div>
           </div>
           <div class="popup__slider-box">
             <div class="popup__slider-block">
@@ -51,58 +44,60 @@
               <input type="radio" name="slider" id="slider-b" class="popup__slider-input">
               <input type="radio" name="slider" id="slider-c" class="popup__slider-input">
               <input type="radio" name="slider" id="slider-d" class="popup__slider-input">
-              <div class="popup__slider-control">
-                <label for="slider-a" class="popup__input-style"></label>
-                <label for="slider-b" class="popup__input-style"></label>
-                <label for="slider-c" class="popup__input-style"></label>
-                <label for="slider-d" class="popup__input-style"></label>
+              <div class="popup__brick">
+                <div class="popup__slider-control">
+                  <label id="img-1" for="slider-a" class="popup__input-style"></label>
+                  <label id="img-2" for="slider-b" class="popup__input-style"></label>
+                  <label id="img-3" for="slider-c" class="popup__input-style"></label>
+                  <label id="img-4" for="slider-d" class="popup__input-style"></label>
+                </div>
+                <ul class="popup__ul-bottom">
+                  <li class="popup__li-bottom">
+                    <span class="popup__li-span">Площадь</span>
+                    <span class="popup__li-span-small">34 м²</span>
+                  </li>
+                  <li class="popup__li-bottom">
+                    <span class="popup__li-span">Комнаты</span>
+                    <span class="popup__li-span-small">1</span>
+                  </li>
+                  <li class="popup__li-bottom">
+                    <span class="popup__li-span">Срок</span>
+                    <span class="popup__li-span-small">3 месяца</span>
+                  </li>
+                  <li class="popup__li-bottom">
+                    <span class="popup__li-span">Стоимость</span>
+                    <span class="popup__li-span-small">160 000 р</span>
+                  </li>
+                </ul>
               </div>
               <div class="popup__slider">
                 <div class="popup__slider-container">
-                  <img src="./images/slider-1.6bf08b365f9ec36030c01a675d634696.png" alt="img" id="image-a" class="popup__slider-image">
-                  <img src="./images/slider-2.3542fa0663f67f6a1d963f10d3852e99.png" alt="img" id="image-b" class="popup__slider-image">
-                  <img src="./images/slider-1.6bf08b365f9ec36030c01a675d634696.png" alt="img" id="image-c" class="popup__slider-image">
-                  <img src="./images/slider-2.3542fa0663f67f6a1d963f10d3852e99.png" alt="img" id="image-d" class="popup__slider-image">
+                  <img src="./images/slider-1.7bd4835adf07a247768ef767b1396305.png" alt="img" id="image-a" class="popup__slider-image">
+                  <img src="./images/slider-2.67833a3d65c4f3320b124beda031075a.png" alt="img" id="image-b" class="popup__slider-image">
+                  <img src="./images/slider-3.e4fbf5d06cfb599f04a24742a9d62fc0.png" alt="img" id="image-c" class="popup__slider-image">
+                  <img src="./images/slider-4.0e7ad7739eef2a7efe5241bdb0269990.png" alt="img" id="image-d" class="popup__slider-image">
                 </div>
               </div>
             </div>
-            <div class="popup__info-block">
-              <span class="popup__info-title">Выполненные работы:</span>
-              <ul class="popup__ul">
-                <li class="popup__li">демонтаж напольного покрытия и плинтуса</li>
-                <li class="popup__li">демонтаж старых обоев</li>
-                <li class="popup__li">демонтаж электропроводки и электроточек</li>
-                <li class="popup__li">демонтаж наличника</li>
-                <li class="popup__li">грунтовка потолка</li>
-              </ul>
-              <ul class="popup__ul-bottom">
-                <li class="popup__li-bottom">
-                  <span class="popup__li-span">Площадь</span>
-                  <span class="popup__li-span">34 м²</span>
-                </li>
-                <li class="popup__li-bottom">
-                  <span class="popup__li-span">Комнаты</span>
-                  <span class="popup__li-span">1</span>
-                </li>
-                <li class="popup__li-bottom">
-                  <span class="popup__li-span">Срок</span>
-                  <span class="popup__li-span">3 месяца</span>
-                </li>
-                <li class="popup__li-bottom">
-                  <span class="popup__li-span">Стоимость</span>
-                  <span class="popup__li-span">160 000 руб.</span>
-                </li>
-              </ul>
-            </div>
           </div>
+          <span class="popup__info-title">Дизайн однокомнатной квартиры построен на контрасте темных стен и светлого пола. 
+            Подобранная в тон стен мебель, которую можно хорошо рассмотреть на фото, не перегружает пространство, так что 
+            маленькая квартира выглядит просторной. А яркости интерьеру добавляют акцентные детали: яркие кортины, декоративные кресла. В
+          </span> 
+          <span class="popup__info-title">
+            интерьере гостиной авторы проекта выделили два функциональных сегмента: зону отдыха с диваном, креслом и журнальным 
+            столиком и столовую с темным прямоугольным столом в современном стиле и классическими стульями. А высокие парные шкафы 
+            с матовым остеклением использовали, чтобы упорядочить пространство и создать ось симметрии. Дизайн кухни решен 
+            в стиле минимализм, который идеально подходит для небольших помещений
+          </span>     
         </div>
-      </div>
+      </div>     
     </section>
     <header class="header">
       <div class="header__container">
         <a href="#" class="header__title">МАГИСТР-РЕМОНТ.РФ</a>
-        <!--
         <nav class="header__box">
+          <div class="header__close"></div>
           <div class="header__button-menu">
             <span class="header__button-menu-span">ремонт квартир</span>
             <span class="header__button-menu-figure"></span>
@@ -111,6 +106,12 @@
               <li class="header__li">косметический</li>
               <li class="header__li">капитальный</li>
               <li class="header__li">элитный</li>
+              <li class="header__li">черновой</li>
+              <li class="header__li">косметический</li>
+              <li class="header__li">капитальный</li>
+              <li class="header__li">элитный</li>
+              <li class="header__li">черновой</li>
+              <li class="header__li">косметический</li>
             </ul>
           </div>
           <div class="header__button-menu">
@@ -121,17 +122,17 @@
               <li class="header__li">2-ух комнатные</li>
               <li class="header__li">3-ёх комнатные</li>
               <li class="header__li">4-ёх комнатные</li>
+              <li class="header__li">1-комнатные</li>
+              <li class="header__li">2-ух комнатные</li>
+              <li class="header__li">3-ёх комнатные</li>
+              <li class="header__li">4-ёх комнатные</li>
+              <li class="header__li">3-ёх комнатные</li>
+              <li class="header__li">4-ёх комнатные</li>
             </ul>
           </div>
           <div class="header__button-menu">
             <span class="header__button-menu-span">ремонт офисов</span>
-            <span class="header__button-menu-figure"></span>
-            <ul class="header__ul">
-              <li class="header__li">черновой</li>
-              <li class="header__li">косметический</li>
-              <li class="header__li">капитальный</li>
-              <li class="header__li">элитный</li>
-            </ul>
+            <span class="header__button-menu-figure is-closed"></span>
           </div>
           <div class="header__button-menu">
             <span class="header__button-menu-span">дома и коттеджи</span>
@@ -142,20 +143,18 @@
             <span class="header__button-menu-span">дизайн интерьера</span>
             <span class="header__button-menu-figure is-closed"></span>
             <ul class="header__ul is-closed"></ul>
-          </div>
-          <div class="header__button-menu">
-            <span class="header__button-menu-span">вопрос-ответ</span>
-            <span class="header__button-menu-figure is-closed"></span>
-            <ul class="header__ul is-closed"></ul>
           </div>             
         </nav>
-        --> 
         <div class="header__block">
-          <a href="tel:+78006002211" class="header__tel">8 (800)6002211</a>
+          <a href="tel:+78006002211" class="header__tel">8 (800) 600-22-11</a>
           <button type="button" class="header__tel-button">Заказать звонок</button>
         </div>
+        <div class="header__burger">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </div>
       </div>
-      
     </header>
     <main class="main fullpage-wrapper" id="fullpage">
       <section class="section fp-auto-height">
@@ -231,11 +230,18 @@
                         <label for="fourInput" class="calculator__input-style">
                           <span class="calculator__check"></span>
                         </label>
+                        <span class="calculator__text-span">Черновой</span>
+                      </div>
+                      <div class="calculator__small-block-top calculator__small-block-top_theme_bottom calculator__small-block-top_theme_start">
+                        <input type="radio" name="twoInput" id="fiveInput" class="calculator__input">
+                        <label for="fiveInput" class="calculator__input-style">
+                          <span class="calculator__check"></span>
+                        </label>
                         <span class="calculator__text-span">Косметический</span>
                       </div>
                       <div class="calculator__small-block-top calculator__small-block-top_theme_start">
-                        <input type="radio" name="twoInput" id="fiveInput" class="calculator__input">
-                        <label for="fiveInput" class="calculator__input-style">
+                        <input type="radio" name="twoInput" id="newInput" class="calculator__input">
+                        <label for="newInput" class="calculator__input-style">
                           <span class="calculator__check"></span>
                         </label>
                         <span class="calculator__text-span">Дизайнерский</span>
@@ -295,176 +301,170 @@
             <div class="info__menu">
               <div class="info__title-box">
                 <input type="radio" name="menu" id="oneMenu" class="info__checkbox">
-                <label for="oneMenu" class="info__label-title">Новостройка</label>
+                <label for="oneMenu" id="oneLabel" class="info__label-title">Новостройка</label>
                 <input type="radio" name="menu" id="twoMenu" class="info__checkbox">
-                <label for="twoMenu" class="info__label-title">Вторичка</label>
+                <label for="twoMenu" id="twoLabel" class="info__label-title">Вторичка</label>
                 <input type="radio" name="menu" id="threeMenu" class="info__checkbox">
-                <label for="threeMenu" class="info__label-title">Дизайнерский</label>
+                <label for="threeMenu" id="threeLabel" class="info__label-title">Дизайнерский</label>
               </div>
               <div class="info__line">
                 <div class="info__scroll"></div>
               </div>
             </div>
             <div class="info__big-box">  
-              <div class="info__slider-box">      
-                <div id="newHouse" class="info__box">
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЧИСТОВОЙ РЕМОНТ</h4>
-                    <img src="./images/item-png-1.a0b7dabc991d82a41b3c1a399cd2fa22.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 5000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЧЕРНОВОЙ РЕМОНТ</h4>
-                    <img src="./images/item-png-2.c2fd0412932e4b8fa35538ec498a3481.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 7000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЕВРОРЕМОНТ</h4>
-                    <img src="./images/item-png-3.a75c5c09ab14d779e654c717aec0b13f.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 10000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
+              <div class="info__slider-box">                    
+                <div class="info__item">
+                  <h4 class="info__item-title">ЧИСТОВОЙ РЕМОНТ</h4>
+                  <img src="./images/item-png-1.a0b7dabc991d82a41b3c1a399cd2fa22.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 5 000 р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
                 </div>
-                <div id="secondHouse" class="info__box">
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЧИСТОВОЙ РЕМОНТ</h4>
-                    <img src="./images/item-png-1.a0b7dabc991d82a41b3c1a399cd2fa22.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 5000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЧЕРНОВОЙ РЕМОНТ</h4>
-                    <img src="./images/item-png-2.c2fd0412932e4b8fa35538ec498a3481.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 7000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЕВРОРЕМОНТ</h4>
-                    <img src="./images/item-png-3.a75c5c09ab14d779e654c717aec0b13f.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 10000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
+                <div class="info__item">
+                  <h4 class="info__item-title">ЧЕРНОВОЙ РЕМОНТ</h4>
+                  <img src="./images/item-png-2.c2fd0412932e4b8fa35538ec498a3481.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 7 000 р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
                 </div>
-                <div id="designHouse" class="info__box">
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЕВРОРЕМОНТ</h4>
-                    <img src="./images/item-png-1.a0b7dabc991d82a41b3c1a399cd2fa22.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 5000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЧЕРНОВОЙ РЕМОНТ</h4>
-                    <img src="./images/item-png-2.c2fd0412932e4b8fa35538ec498a3481.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 7000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="info__item">
-                    <h4 class="info__item-title">ЧИСТОВОЙ РЕМОНТ</h4>
-                    <img src="./images/item-png-3.a75c5c09ab14d779e654c717aec0b13f.png" alt="img" class="info__item-image">
-                    <ul class="info__ul">
-                      <li class="info__li">отделка потолков</li>
-                      <li class="info__li">отделка стен</li>
-                      <li class="info__li">монтаж розеток и выключателей</li>
-                      <li class="info__li">установка светильников</li>
-                      <li class="info__li">установка сантехники</li>
-                    </ul>
-                    <span class="info__item-span">от 10000р. за 1м.кв.</span>
-                    <button type="button" class="info__button">
-                      <span class="info__button-span">
-                        <span class="info__button-span-text">Узнать подробнее</span>
-                      </span>
-                    </button>
-                  </div>
+                <div class="info__item">
+                  <h4 class="info__item-title">ЕВРОРЕМОНТ</h4>
+                  <img src="./images/item-png-3.a75c5c09ab14d779e654c717aec0b13f.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 10 000р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
+                </div>     
+                <div class="info__item">
+                  <h4 class="info__item-title">ЧИСТОВОЙ РЕМОНТ</h4>
+                  <img src="./images/item-png-1.a0b7dabc991d82a41b3c1a399cd2fa22.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 5 000 р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="info__item">
+                  <h4 class="info__item-title">ЧЕРНОВОЙ РЕМОНТ</h4>
+                  <img src="./images/item-png-2.c2fd0412932e4b8fa35538ec498a3481.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 7 000 р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="info__item">
+                  <h4 class="info__item-title">ЕВРОРЕМОНТ</h4>
+                  <img src="./images/item-png-3.a75c5c09ab14d779e654c717aec0b13f.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 10 000 р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
+                </div> 
+                <div class="info__item">
+                  <h4 class="info__item-title">ЕВРОРЕМОНТ</h4>
+                  <img src="./images/item-png-1.a0b7dabc991d82a41b3c1a399cd2fa22.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 5 000 р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="info__item">
+                  <h4 class="info__item-title">ЧЕРНОВОЙ РЕМОНТ</h4>
+                  <img src="./images/item-png-2.c2fd0412932e4b8fa35538ec498a3481.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 7 000 р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="info__item">
+                  <h4 class="info__item-title">ЧИСТОВОЙ РЕМОНТ</h4>
+                  <img src="./images/item-png-3.a75c5c09ab14d779e654c717aec0b13f.png" alt="img" class="info__item-image">
+                  <ul class="info__ul">
+                    <li class="info__li">отделка потолков</li>
+                    <li class="info__li">отделка стен</li>
+                    <li class="info__li">монтаж розеток и выключателей</li>
+                    <li class="info__li">установка светильников</li>
+                    <li class="info__li">установка сантехники</li>
+                  </ul>
+                  <span class="info__item-span">от 10 000 р. за 1м.кв.</span>
+                  <button type="button" class="info__button">
+                    <span class="info__button-span">
+                      <span class="info__button-span-text">Узнать подробнее</span>
+                    </span>
+                  </button>
                 </div>
               </div>     
             </div>  
@@ -481,6 +481,9 @@
                   <span class="example__left-figure"></span>
                   <span class="example__span-button">Пред.</span>
                 </button>
+                <div class="example__line">
+                  <div class="example__scroll"></div>
+                </div>
                 <button type="button" id="right" class="example__button">
                   <span class="example__span-button">След.</span>
                   <span class="example__right-figure"></span>
@@ -489,58 +492,37 @@
               <div class="example__block">
                 <div class="example__slider-block">
                   <div class="example__item">
-                    <img src="./images/slider-1.6bf08b365f9ec36030c01a675d634696.png" alt="img" class="example__image">
+                    <img src="./images/slider-1.7bd4835adf07a247768ef767b1396305.png" alt="img" class="example__image">
                     <span class="example__item-span">Для тех кто ценит уют.</span>
-                    <button type="button" class="example__item-button">
+                    <button type="button" id="oneSliderButton" class="example__item-button">
                       <span class="example__arrow"></span>
                     </button>
                   </div>
                   <div class="example__item">
-                    <img src="./images/slider-2.3542fa0663f67f6a1d963f10d3852e99.png" alt="img" class="example__image">
+                    <img src="./images/slider-2.67833a3d65c4f3320b124beda031075a.png" alt="img" class="example__image">
                     <span class="example__item-span">Для тех кто ценит уют.</span>
-                    <button type="button" class="example__item-button">
+                    <button type="button" id="twoSliderButton" class="example__item-button">
                       <span class="example__arrow"></span>
                     </button>
                   </div> 
                   <div class="example__item">
-                    <img src="./images/slider-1.6bf08b365f9ec36030c01a675d634696.png" alt="img" class="example__image">
+                    <img src="./images/slider-1.7bd4835adf07a247768ef767b1396305.png" alt="img" class="example__image">
                     <span class="example__item-span">Для тех кто ценит уют.</span>
-                    <button type="button" class="example__item-button">
+                    <button type="button" id="threeSliderButton" class="example__item-button">
                       <span class="example__arrow"></span>
                     </button>
                   </div>
                   <div class="example__item">
-                    <img src="./images/slider-2.3542fa0663f67f6a1d963f10d3852e99.png" alt="img" class="example__image">
+                    <img src="./images/slider-2.67833a3d65c4f3320b124beda031075a.png" alt="img" class="example__image">
                     <span class="example__item-span">Для тех кто ценит уют.</span>
-                    <button type="button" class="example__item-button">
+                    <button type="button" id="fourSliderButton" class="example__item-button">
                       <span class="example__arrow"></span>
                     </button>
                   </div> 
                   <div class="example__item">
-                    <img src="./images/slider-1.6bf08b365f9ec36030c01a675d634696.png" alt="img" class="example__image">
+                    <img src="./images/slider-1.7bd4835adf07a247768ef767b1396305.png" alt="img" class="example__image">
                     <span class="example__item-span">Для тех кто ценит уют.</span>
-                    <button type="button" class="example__item-button">
-                      <span class="example__arrow"></span>
-                    </button>
-                  </div>
-                  <div class="example__item">
-                    <img src="./images/slider-2.3542fa0663f67f6a1d963f10d3852e99.png" alt="img" class="example__image">
-                    <span class="example__item-span">Для тех кто ценит уют.</span>
-                    <button type="button" class="example__item-button">
-                      <span class="example__arrow"></span>
-                    </button>
-                  </div> 
-                  <div class="example__item">
-                    <img src="./images/slider-1.6bf08b365f9ec36030c01a675d634696.png" alt="img" class="example__image">
-                    <span class="example__item-span">Для тех кто ценит уют.</span>
-                    <button type="button" class="example__item-button">
-                      <span class="example__arrow"></span>
-                    </button>
-                  </div>
-                  <div class="example__item">
-                    <img src="./images/slider-2.3542fa0663f67f6a1d963f10d3852e99.png" alt="img" class="example__image">
-                    <span class="example__item-span">Для тех кто ценит уют.</span>
-                    <button type="button" class="example__item-button">
+                    <button type="button" id="fiveSliderButton" class="example__item-button">
                       <span class="example__arrow"></span>
                     </button>
                   </div>
@@ -556,36 +538,36 @@
             <h3 class="about__title">Мы в цифрах</h3>
             <ul class="about__box">
               <li class="about__block">
-                <span class="about__number">526</span>
-                <span class="about__span">ЧИСТОВОЙ РЕМОНТ</span>
+                <span class="about__number">25 лет</span>
+                <span class="about__span">Опыта работы</span>
               </li>
               <li class="about__block">
-                <span class="about__number">526</span>
-                <span class="about__span">ЧИСТОВОЙ РЕМОНТ</span>
+                <span class="about__number">1961</span>
+                <span class="about__span">реализованных проектов</span>
               </li>
               <li class="about__block">
-                <span class="about__number">526</span>
-                <span class="about__span">ЧИСТОВОЙ РЕМОНТ</span>
+                <span class="about__number">2 года</span>
+                <span class="about__span">горантии</span>
               </li>
               <li class="about__block">
-                <span class="about__number">526</span>
-                <span class="about__span">ЧИСТОВОЙ РЕМОНТ</span>
+                <span class="about__number">6 из 10</span>
+                <span class="about__span">приходят по рекомендации</span>
               </li>
               <li class="about__block">
-                <span class="about__number">526</span>
-                <span class="about__span">ЧИСТОВОЙ РЕМОНТ</span>
+                <span class="about__number">197 сотрудников</span>
+                <span class="about__span">в штате компании</span>
               </li>
               <li class="about__block">
-                <span class="about__number">526</span>
-                <span class="about__span">ЧИСТОВОЙ РЕМОНТ</span>
+                <span class="about__number">от 2 250 р.</span>
+                <span class="about__span">стоимость ремонта</span>
               </li>
               <li class="about__block">
-                <span class="about__number">526</span>
-                <span class="about__span">ЧИСТОВОЙ РЕМОНТ</span>
+                <span class="about__number">более 10</span>
+                <span class="about__span">сотрудничающих компаний</span>
               </li>
               <li class="about__block">
-                <span class="about__number">526</span>
-                <span class="about__span">ЧИСТОВОЙ РЕМОНТ</span>
+                <span class="about__number">46 352м</span>
+                <span class="about__span">площад выполненных работ</span>
               </li>
             </ul>
           </div>
@@ -602,10 +584,11 @@
                   <span class="question__button-figure"></span>
                 </button>
                 <div class="question__mini-block">
-                  <p class="question__text">Для определения стилистического, решения подготавливаются коллажи с
-                    общей концепцией. Они представляют собой набросок будуще-го интерьера помогают определиться с цветами, материалами
-                    отделки, элементами декора и общим настроением. Обсуждение коллажей помогает дизайнерам лучше понятьпожелания клиента к внешнему виду
-                    будущего интерьера. Для определения стилистического, решения подготавливаются коллажи собщей концепцией. Они представляют собой набросок 
+                  <p class="question__text">Стоимость проведения ремонта после подписания договора не изменяется ни в коем случае. Единственным исключением становится внесение изменений в проект, в случае, когда вы хотите что-то добавить или наоборот убрать. 
+                    В остальных ситуациях мы тщательно рассчитываем все работы и цена на ремонт остается неизменной в течение 60 дней. Т.е., если после составления сметы до момента подписания договора и начала работ пройдет менее 60 дней, то цена будет изначальной и неизменной. 
+                    В той ситуации, если вы оформили заявку на расчет точной стоимости ремонта, но сочли его дорогим или решили отложить по другим причинам и приняли решение проводить работы уже спустя несколько месяцев, то потребуется повторный расчет и цена может немного измениться. 
+                    Потому, если вы решили делать ремонт и обратитесь в нашу компанию, то заплатите ровно ту сумму, которая была оговорена изначально и указана в договоре. При этом, компания берет на себя ответственность за любые ошибки специалистов при расчете и, в случае недочетов и необходимости увеличения изначальной сметы по вине наших сотрудников - компенсируем разницу за свой счет. 
+                    Мы беспокоимся о своей репутации и делаем все, чтобы клиенты нам доверяли.
                   </p>
                 </div>
               </div>
@@ -615,10 +598,14 @@
                   <span class="question__button-figure"></span>
                 </button>
                 <div class="question__mini-block">
-                  <p class="question__text">Для определения стилистического, решения подготавливаются коллажи с
-                    общей концепцией. Они представляют собой набросок будуще-го интерьера помогают определиться с цветами, материалами
-                    отделки, элементами декора и общим настроением. Обсуждение коллажей помогает дизайнерам лучше понятьпожелания клиента к внешнему виду
-                    будущего интерьера. Для определения стилистического, решения подготавливаются коллажи собщей концепцией. Они представляют собой набросок 
+                  <p class="question__text">
+                    Наша компания делает все для того, чтобы каждому клиенту было максимально удобно сотрудничать с нами, а потому предлагаем возможность оплаты любым предпочтительным для клиента способом, а именно: 
+                    1.  Наличными при подписании договора и акта приемки работ. <br/>
+                    2.  Оплата банковской картой. <br/>
+                    3.  Безналичный расчет. <br/>
+                    4.  Также работаем с некоторыми электронными кошельками. <br/>
+                    Выбор удобного для вас способа будет зависеть от ряда факторов, среди которых личные предпочтения, а также экономия. Возможно, для вас более предпочтительно будет оплатить наличными, чтобы не ложить деньги на банковский счет и совершать перевод. Другим больше подходит оплата картой, организации при заказе предпочитают безналичную оплату на расчетный счет компании. 
+                    Мы всегда поможем вам определиться с выбором платежа и подскажем, как будет оплатить выгодней для вас, чтобы избежать лишних комиссий при оплате, которые могут предусматривать банки или другие платежные системы. Вам останется лишь выбрать нужный способ оплаты и выполнить платеж.
                   </p>
                 </div>
               </div>
@@ -628,23 +615,31 @@
                   <span class="question__button-figure"></span>
                 </button>
                 <div class="question__mini-block">
-                  <p class="question__text">Для определения стилистического, решения подготавливаются коллажи с
-                    общей концепцией. Они представляют собой набросок будуще-го интерьера помогают определиться с цветами, материалами
-                    отделки, элементами декора и общим настроением. Обсуждение коллажей помогает дизайнерам лучше понятьпожелания клиента к внешнему виду
-                    будущего интерьера. Для определения стилистического, решения подготавливаются коллажи собщей концепцией. Они представляют собой набросок 
+                  <p class="question__text">
+                    Наша компания не выдвигает требований касательно порядка оплаты работ. Вы можете внести частичную предоплату или оплатить работы полностью сразу при заключении договора. Но, в то же время, оплата возможна и по окончанию работ. 
+                    Но, мы рекомендуем проводить оплату поэтапно, что является лучшим решением и имеет большой ряд преимуществ: 
+                    1.  Вы самостоятельно контролируете проведение работ на каждом этапе, оцениваете их качество и оплачиваете по факту выполнения определенной работы. <br/>
+                    2.  Заказчик отдельно подписывает акты приемки работ на каждую услугу, начиная от черновой отделки и заканчивая установкой последней лампочки. <br/>
+                    3.  В любое момент, в случае возникновения проблем или финансовых трудностей, вы можете отказаться от сотрудничества и все услуги уже будут оплачены. <br/>
+                    А главным становится то, что вы вносите оплату постепенно, небольшими суммами, что не особо бьет по бюджету и предоставляет пространство для маневра в ремонте. При этом, вы гарантированно защищаете себя от некачественного выполнения работ и получаете возможность в любой момент их не принять. Конечно, таких случаев у нас не бывает, но компания понимает, что сегодня на строительном рынке много недобросовестных подрядчиков и потому делает все для того, чтобы каждому клиенту было удобно, а сотрудничество стало максимально комфортным и безопасным.
+
                   </p>
                 </div>
               </div>      
               <div class="question__mini-box">
                 <button type="button" class="question__button">
-                  <span class="question__button-span">КТО РАБОТАЕТ В ШТАТЕ СК «ЛЯПОТА»?</span>
+                  <span class="question__button-span">КТО БУДЕТ ПРОВОДИТЬ РЕМОНТНЫЕ РАБОТЫ?</span>
                   <span class="question__button-figure"></span>
                 </button>
                 <div class="question__mini-block">
-                  <p class="question__text">Для определения стилистического, решения подготавливаются коллажи с
-                    общей концепцией. Они представляют собой набросок будуще-го интерьера помогают определиться с цветами, материалами
-                    отделки, элементами декора и общим настроением. Обсуждение коллажей помогает дизайнерам лучше понятьпожелания клиента к внешнему виду
-                    будущего интерьера. Для определения стилистического, решения подготавливаются коллажи собщей концепцией. Они представляют собой набросок 
+                  <p class="question__text">
+                    Все работы выполняются только опытными узкоспециализированными специалистами компании “Магистр-Ремонт”. Отметим, что каждый из сотрудников занимается работами только по узкой специализации. Мы не предлагаем услуги универсальных мастеров, которые делают все на среднем уровне или просто “нормально”, а предоставляем квалифицированную помощь. 
+                    Если вам нужно поменять сантехнику, то это сделает опытный сантехник, укладку кафеля проведет плиточник, а работы по окраске и поверхностей маляр. И так для каждого из видов работ. Кроме того, наши специалисты: 
+                    1.  Имеют опыт от 5 и более лет в своей узкой специализации. <br/> 
+                    2.  Регулярно проходят курсы повышения квалификации. <br/>
+                    3.  Подтверждают свою квалификацию и сдают экзамены на соответствие специализации на нужном уровне. <br/>
+                    4.  Используют в работе только современное оборудование и инструменты. <br/>
+                    Все это гарантирует каждому клиенту качественное выполнение работ на каждой фазе. А объединение всех специалистов в одну команду гарантирует получение качественного ремонта без недостатков. А в случае, если вдруг вы заметите какие-либо недостатки ремонта, ответственность за него несет компания, и в этом случае не возникает никаких перекладываний вины на разных подрядчиков и бесконечный поиск виноватого.
                   </p>
                 </div>
               </div>
@@ -654,23 +649,20 @@
                   <span class="question__button-figure"></span>
                 </button>
                 <div class="question__mini-block">
-                  <p class="question__text">Для определения стилистического, решения подготавливаются коллажи с
-                    общей концепцией. Они представляют собой набросок будуще-го интерьера помогают определиться с цветами, материалами
-                    отделки, элементами декора и общим настроением. Обсуждение коллажей помогает дизайнерам лучше понятьпожелания клиента к внешнему виду
-                    будущего интерьера. Для определения стилистического, решения подготавливаются коллажи собщей концепцией. Они представляют собой набросок 
+                  <p class="question__text">После проведения замеров и составления плана работ, наш специалист предоставит вам полноценную консультацию по подбору всех материалов. Мы работаем в этой сфере уже не первый год, а потому знаем все особенности тех или иных материалов, их совместимость и другие нюансы. 
+                    Потому поможем вам подобрать наиболее выгодное решение, с которым вы сможете получить качественный ремонт и при этом сэкономить. Но мнение специалиста имеет только рекомендательный характер и вы можете приобрести любые материалы на свое усмотрение, более дешевые или же, наоборот, дорогие. Все это на ваше усмотрение, нашей основной задачей становится помощь и проведение качественных ремонтных работ.
                   </p>
                 </div>
               </div>
               <div class="question__mini-box">
                 <button type="button" class="question__button">
-                  <span class="question__button-span">ПРОВОДИТСЯ ЛИ УБОРКА И ВЫВОЗ СТРОИТЕЛЬНОГО МУСОРА?</span>
+                  <span class="question__button-span">МОГУ ЛИ Я КОНТРОЛИРОВАТЬ ПРОВЕДЕНИЕ РЕМОНТНЫХ РАБОТ?</span>
                   <span class="question__button-figure"></span>
                 </button>
                 <div class="question__mini-block">
-                  <p class="question__text">Для определения стилистического, решения подготавливаются коллажи с
-                    общей концепцией. Они представляют собой набросок будуще-го интерьера помогают определиться с цветами, материалами
-                    отделки, элементами декора и общим настроением. Обсуждение коллажей помогает дизайнерам лучше понятьпожелания клиента к внешнему виду
-                    будущего интерьера. Для определения стилистического, решения подготавливаются коллажи собщей концепцией. Они представляют собой набросок 
+                  <p class="question__text">Мы предлагаем вам возможность полноценного контроля работ на любой стадии. Вы можете постоянно находиться на объекте и следить за каждым действием работников, и в случае некачественного ремонта сделать им замечание или пожаловаться руководству. 
+                    Также мы предлагаем возможность и удаленного наблюдения. Компания установит временные камеры и подключит вам трансляцию, которую вы сможете смотреть в любом удобном месте и всегда знать, как продвигаются работы. 
+                    Мы делаем все для того, чтобы клиент полностью доверял, и для этого, в том числе, позволяем проверять и контролировать каждый шаг, чтобы вы не беспокоились о результате.
                   </p>
                 </div>
               </div>
@@ -680,10 +672,9 @@
                   <span class="question__button-figure"></span>
                 </button>
                 <div class="question__mini-block">
-                  <p class="question__text">Для определения стилистического, решения подготавливаются коллажи с
-                    общей концепцией. Они представляют собой набросок будуще-го интерьера помогают определиться с цветами, материалами
-                    отделки, элементами декора и общим настроением. Обсуждение коллажей помогает дизайнерам лучше понятьпожелания клиента к внешнему виду
-                    будущего интерьера. Для определения стилистического, решения подготавливаются коллажи собщей концепцией. Они представляют собой набросок 
+                  <p class="question__text">Закупка материалов для ремонта квартиры может проводиться как самостоятельно, так и с нашей помощью. Здесь все зависит от ваших предпочтений и доверия. Мы прекрасно понимаем, что сегодня клиенты все меньше доверяют подрядчикам и предпочитают закупать материал самостоятельно.
+                    Но, в то же время, доверить эту задачу нам будет более выгодным решением. Мы, благодаря договоренностям с оптовыми поставщиками, получаем возможность купить строительные материалы для ремонта дешевле цены в магазине. Экономия в таком случае может составить до 30% от общей суммы затрат на закупку. 
+                    В остальном же, решение остается только за вами, вы можете сэкономить и доверить покупку материалов нам, или наоборот, купить все самостоятельно, а компания возьмет на себя ремонт квартиры в Москве и проведение всех вспомогательных работ.                
                   </p>
                 </div>
               </div>
@@ -695,7 +686,6 @@
         <div class="connection">
           <div class="connection__container">
             <h3 class="connection__title">Остались вопросы?</h3>
-            <span class="connection__span">Мы с радостью на них ответим</span>
             <form class="connection__form">
               <input type="text" placeholder="Ваше имя" class="connection__input">
               <input type="tel" placeholder="Ваш номер телефона" class="connection__input">
@@ -710,6 +700,6 @@
       </section>
     </main>
   </div>
-  <script src="main.564756b34c9ead6f2d2d.js"></script>
+  <script src="main.e5350a74243457cb339b.js"></script>
 </body>
 </html>
